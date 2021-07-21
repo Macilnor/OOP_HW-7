@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include "Date.h"
+#include "YandexParser.h"
 
 
 int main()
@@ -27,4 +28,7 @@ int main()
 	cout << *(compareDate(date1, date2)) << endl;
 	swapDate(date1, date2);
 	cout << *date1 << "  " << *date2 << endl;
+
+	YandexParser par("Yandex.htm");
+	cout << par.parse("USD") << "\t" << par.parse("EUR") << endl;
 }
